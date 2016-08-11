@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MIS基础数据管理系统</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- User CSS -->
+    <link href="../css/user.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- datetime -->
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">MIS基础数据管理系统</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav nav-top-1">
+                    <li><a href="#">您有<span class="span-red"> 1 </span>新报修未处理 </a></li>
+                </ul>
+                
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="input-group">
+                      <div class="form-group has-feedback">
+                        <input type="text" class="form-control" name="search_con" id="search_con" placeholder="权限代码或权限名称">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                      </div>
+                  </div>
+                </form>
+
+                <ul class="nav navbar-top-links navbar-right nav-top-2">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span id="UserName">shelleymyl</span><i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages" role="menu">
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+            </div>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse" id="sidebar_1">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="user.html"><img src="../images/mis_icon_01.png" class="nav_img"/>用户管理</a>
+                        </li>
+                         <li>
+                            <a href="func.html"><img src="../images/mis_icon_02.png" class="nav_img"/>权限管理</a>
+                        </li>
+                        <li>
+                            <a href="role.html"><img src="../images/mis_icon_03.png" class="nav_img"/>角色管理</a>
+                        </li>
+                         <li>
+                            <a href="ilog.html"><img src="../images/mis_icon_04.png" class="nav_img"/>日志管理</a>
+                        </li>
+                        <li>
+                            <a href="database.html"><img src="../images/mis_icon_05.png" class="nav_img"/>数据库管理</a>
+                           <!--  <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="blank.html">Blank Page</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">Login Page</a>
+                                </li>
+                            </ul> -->
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="ilog">
+                <div class="row">
+                    <form class="form-inline">
+
+                        <div class="form-group">
+                            <label for="user_mal">全部项目</label>
+                            <select class="form-control" id="user_mal" name="user_mal">
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_mal">年份</label>
+                            <select class="form-control" id="user_mal" name="user_mal">
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_mal">月份</label>
+                            <select class="form-control" id="user_mal" name="user_mal">
+                                <option>1月</option>
+                                <option>2月</option>
+                                <option>3月</option>
+                                <option>4月</option>
+                                <option>5月</option>
+                                <option>6月</option>
+                                <option>7月</option>
+                                <option>8月</option>
+                                <option>9月</option>
+                                <option>10月</option>
+                                <option>11月</option>
+                                <option>12月</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">开始时间</span>
+                          <input type="text" class="form-control form_datetime" id="begin_time" readonly>
+                        </div>
+
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">结束时间</span>
+                          <input type="text" class="form-control form_datetime" id="end_time" readonly>
+                        </div>
+                        
+                         <button class="btn btn-info search_ok" id="search_ok">搜索</button>  
+                     </form>
+                </div>  
+
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="col-md-4">
+                                    <div>
+                                        <button class="btn btn-info">用户资费信息统计</button> 
+                                        <label>时间:</label>
+                                        <label>共计:13类</label>  
+                                    </div>
+                                    <table class="table">
+                                        <tr>
+                                            <td>用户资费情况</td>
+                                        </tr>
+                                        <tr>
+                                            <td>已欠费</td>
+                                        </tr>
+                                        <tr>
+                                            <td>缴费类型</td>
+                                        </tr>
+                                        <tr>
+                                            <td>已停止服务</td>
+                                        </tr>
+                                        <tr>
+                                            <td>新签订</td>
+                                        </tr>
+                                        <tr>
+                                            <td>运维中派单</td>
+                                        </tr>
+                                        <tr>
+                                            <td>预约中派单</td>
+                                        </tr>
+                                        <tr>
+                                            <td>施工中派单</td>
+                                        </tr>
+                                        <tr>
+                                            <td>运维中派单</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-8">
+                                <!-- /.col-lg-12 -->
+                                    <div class="col-lg-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                Pie Chart Example
+                                            </div>
+                                            <!-- /.panel-heading -->
+                                            <div class="panel-body">
+                                                <div class="flot-chart">
+                                                    <div class="flot-chart-content" id="flot-pie-chart"></div>
+                                                </div>
+                                            </div>
+                                            <!-- /.panel-body -->
+                                        </div>
+                                        <!-- /.panel -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+	<!-- DataTables JavaScript -->
+	<script src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+	<script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+    <!-- datetime -->
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+
+	<!-- Custom Theme JavaScript -->
+	<script src="../dist/js/sb-admin-2.js"></script>
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script src="../js/ilog.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+
+</body>
+
+</html>

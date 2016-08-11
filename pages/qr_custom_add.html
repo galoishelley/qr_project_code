@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>二维码设备管理系统</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- User CSS -->
+    <link href="../css/user.css" rel="stylesheet">
+    <link href="../css/bootstrapValidator.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sidebar_1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">二维码设备管理系统</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav nav-top-1">
+                    <li><a href="#">您有<span class="span-red"> 1 </span>新报修未处理 </a></li>
+                </ul>
+                
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="input-group">
+                      <div class="form-group has-feedback">
+                        <input type="text" class="form-control" name="search_con" id="search_con" placeholder="权限代码或权限名称">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                      </div>
+                  </div>
+                </form>
+
+                <ul class="nav navbar-top-links navbar-right nav-top-2">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span id="UserName">shelleymyl</span><i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages" role="menu">
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+                <!-- /.navbar-top-links -->
+            </div>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse" id="sidebar_1">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="qr_index.html"><img src="../images/mis_icon_01.png" class="nav_img"/>首页</a>
+                        </li>
+                         <li>
+                            <a href="qr_custom.html"><img src="../images/mis_icon_02.png" class="nav_img"/>客户管理</a>
+                        </li>
+                        <li>
+                            <a href="role.html"><img src="../images/mis_icon_03.png" class="nav_img"/>项目管理</a>
+                        </li>
+                         <li>
+                            <a href="ilog.html"><img src="../images/mis_icon_04.png" class="nav_img"/>订单管理</a>
+                        </li>
+                        <li>
+                            <a href="database.html"><img src="../images/mis_icon_05.png" class="nav_img"/>运维管理</a>
+                        </li>
+ 						<li>
+                            <a href="database.html"><img src="../images/mis_icon_05.png" class="nav_img"/>统计分析<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="blank.html">用户信息统计</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">二维码位置统计</a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">维修信息统计</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">设备信息统计</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="database.html"><img src="../images/mis_icon_05.png" class="nav_img"/>数据维护<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="blank.html">故障类型表</a>
+                                </li>
+                                <li>
+                                    <a href="login.html">设备属性表</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>                                     
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="qr_custom_add form_add">
+                <div class="row">
+                    <div class="panel-top-row col-md-4">
+                        <btn class="btn btn-danger" id="btn-restore"><span class="vertical-center">一键还原</span></btn>
+                    </div>
+                    <div class="panel-top-row col-md-4">
+                        <btn class="btn btn-warning" id="btn-backup"><span class="vertical-center">一键备份</span></btn>
+                                
+                     </div>
+                     <div class="panel-top-row col-md-4">
+                        <btn class="btn btn btn-info" id="btn-backup"><span class="vertical-center">一键备份</span></btn>
+                                
+                     </div>
+                     <div class="panel-top-row col-md-4">
+                        <btn class="btn btn-success" id="btn-backup"><span class="vertical-center">一键备份</span></btn>
+                     </div>
+                </div>  
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading col-md-12">
+                                <div class="panel-title">新增客户</div>
+                                <div class="panel-btn">
+                                    <button class="panel-title-1" id="qr_submit" type="submit" name="submit">提交</span></button>
+                                    <button class="panel-title-1" id="qr_save" type="submit" name="submit"><span class="glyphicon glyphicon-saved"></span></button>
+                                    <button class="panel-title-2" id="qr_cancel"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <form class="form-inline" role="form" id="func_form">
+                                    <input type="hidden" class="form-control" name="action_type" id="action_type" value="create">
+
+                                    <input type="hidden" class="form-control" name="func_id" id="func_id">
+
+                                    <div class="form-group">
+                                        <label for="func_code" class="col-sm-2 control-label">客户名称<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_code" name="func_code" maxlength="20" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">用户编号<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_name" name="func_name" >
+                                    </div>    
+                                    <div class="form-group">
+                                        <label for="func_code" class="col-sm-2 control-label">客户电话1<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_code" name="func_code" maxlength="20" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">客户电话2<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_name" name="func_name" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="func_code" class="col-sm-2 control-label">项目经理<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_code" name="func_code" maxlength="20" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">客户地址<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_name" name="func_name" >
+                                    </div>    
+                                    <div class="form-group">
+                                        <label for="func_code" class="col-sm-2 control-label">项目经理电话<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_code" name="func_code" maxlength="20" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="func_code" class="col-sm-2 control-label">用户类型<span class="span-red">*</span></label>
+                                      <select class="form-control" id="user_mal" name="user_mal">
+                                            <option>1</option>
+                                            <option>2</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="func_code" class="col-sm-2 control-label">行业分类<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_code" name="func_code" maxlength="20" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">固定电话<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_name" name="func_name" >
+                                    </div>    
+                                    <div class="form-group">
+                                        <label for="func_code" class="col-sm-2 control-label">所属分局<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_code" name="func_code" maxlength="20" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">所属派出所<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_name" name="func_name" >
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="func_code" class="col-sm-2 control-label">项目经理性别<span class="span-red">*</span></label>
+                                      <select class="form-control" id="user_mal" name="user_mal">
+                                            <option>男</option>
+                                            <option>女</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">包含项目<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_name" name="func_name" >
+                                    </div>    
+                                    <div class="form-group">
+                                        <label for="func_code" class="col-sm-2 control-label">项目经理身份证号<span class="span-red">*</span></label>
+                                        <input type="text" class="form-control" id="func_code" name="func_code" maxlength="20" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="func_note" class="col-sm-2 control-label">备注</label>
+                                        <textarea class="form-control" rows="3" cols="80" id="func_note" name="func_note"  maxlength="100"></textarea>
+                                    </div>    
+                                  
+                                </form>
+
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- role_add -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+	<!-- DataTables JavaScript -->
+	<script src="../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+	<script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+
+	<!-- Custom Theme JavaScript -->
+	<script src="../dist/js/sb-admin-2.js"></script>
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script src="../js/qr_custom_add.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/bootstrapValidator.js"></script>
+    <!-- map -->
+  	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=401fb4bc7b1c473bbdaf2e9d19b18df8"></script>
+
+</body>
+
+</html>
